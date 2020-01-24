@@ -1,0 +1,35 @@
+.App {
+  text-align: center;
+}
+
+main {
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+}
+
+img {
+  width: 400px;
+  height: 350px;
+}
+
+ul {
+  list-style: none;
+}
+
+.ArtGall-Container {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  
+}
+
+.ArtGall-Info {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 50%;
+}
+
+.ArtGall-P {
+  word-break: break-all;
+}
