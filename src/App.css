@@ -2,34 +2,74 @@
   text-align: center;
 }
 
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.webname {
+  font-size: 25px;
+}
+
+.Header-Butttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
 main {
   display: flex;
   align-content: center;
   flex-direction: column;
 }
 
-img {
+.ArtGall-Slide {
+  display: flex;
+  flex-direction: row;
+}
+
+.ArtGall-Container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 1%;
+}
+
+.ArtGall-Pictures {
   width: 400px;
   height: 350px;
+}
+
+.ArtGall-ProPic {
+  width: 150px;
+  height: 150px;
 }
 
 ul {
   list-style: none;
 }
 
-.ArtGall-Container {
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  
-}
-
 .ArtGall-Info {
   display: flex;
-  flex-wrap: wrap;
   max-width: 50%;
 }
 
-.ArtGall-P {
-  word-break: break-all;
+.popup {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+.popup_content {
+  background-color: white;
+  position: absolute;
+  top: 20%;
+  left: 30%;
+  width: 40%;
+  padding: 20px;
+  border-radius: 5px;
+  border: 2px solid black;
 }
