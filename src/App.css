@@ -5,7 +5,7 @@
 header {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .webname {
@@ -18,14 +18,24 @@ header {
   justify-content: space-evenly;
 }
 
+.webname {
+  margin: 0px 10px 0px 10px;
+  font-size: 25px;
+}
+
 main {
   display: flex;
   align-content: center;
   flex-direction: column;
 }
 
+.Home-SlideP {
+  margin-left: 13.5%;
+}
+
 .ArtGall-Slide {
   display: flex;
+  justify-content: center;
   flex-direction: row;
 }
 

@@ -4,6 +4,8 @@ import Home from './Components/Home'
 import Header from './Components/Header'
 import SignUp from './Components/SignUp'
 import LogIn from './Components/LogIn'
+import Messenger from './Components/Messenger'
+import Account from './Components/Account'
 import notFound from './Components/404'
 import './App.css';
 
@@ -16,6 +18,8 @@ class App extends Component {
           <Route path="/" component={Home} exact />
           <Route path="/signup" component={SignUp} />
           <Route path="/login" component={LogIn} />
+          <Route path="/messenger" component={Messenger} />
+          <Route path="/account" component={Account} />
           <Route component={notFound} />
         </Switch>
      </BrowserRouter>

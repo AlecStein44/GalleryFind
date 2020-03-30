@@ -1,16 +1,15 @@
 import React from 'react'
 import ArtGall from './ArtGall'
-import PopUp from './PopUp'
 
 class Home extends React.Component {
 
     constructor (props) {
         super(props);
         this.state = {
-            seen: true,
+            seen: false,
             type: 'artistpro',
             results: [],
-            sugnum: [0, 3]
+            sugnum: [0, 3],
         }
     }
 
@@ -49,25 +48,9 @@ class Home extends React.Component {
         }
     }
 
-    inputArtGal = (e) => {
-        e.preventDefault()
-        console.log(this.state.seen)
-        this.forceUpdate(); 
-        fetch(`https://galleryfind-server.herokuapp.com/${this.state.type}`)
-      .then(response => response.json())
-      .then(data => 
-        this.setState({
-            results: data,
-            seen: true
-        })
-      );
-    }
-
     render() {
-        //console.log(this.state.seen) {this.state.seen ? null : <PopUp toggle={this.state.togglePop} onSubmit={this.state.inputArtGal} />}
         return(
             <main>
-                {this.state.seen ? null : <PopUp toggle={this.state.togglePop} onSubmit={this.state.inputArtGal} />}
                 <h2 className="Home-SlideP">Suggested</h2>
                 <div className="ArtGall-Slide">
                     <button value="prevButton" onClick={this.handleSug.bind(this)}>prev</button>
